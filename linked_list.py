@@ -98,6 +98,19 @@ class linked_list:
             previous_node = self.find_at(index - 1)
             previous_node.next = next_node
             aux.next = None
+            
+    def find(self, data):
+        if self.is_empty(): return -1
+        else:
+            iterator = 0
+            aux = Node(data)
+            current_node = self.first
+            while True:
+                if current_node.data == aux.data:
+                    return iterator
+                else:
+                    iterator+=1
+                    current_node = current_node.next
 
 
 
