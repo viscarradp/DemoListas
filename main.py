@@ -18,6 +18,6 @@ lista.add(6)
 lista.add(7)
 
 
-print(lista.find_at(5).data)
+lista.delete_at()
 lista.show()
 

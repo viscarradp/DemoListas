@@ -84,8 +84,8 @@ class linked_list:
             return
         else:
             aux = self.last
-            self.last = self.find_at(self.length() - 1)
-            aux.next = None
+            self.last = self.find_at(self.length() - 2)
+            self.last.next = None
 
     def delete_at(self, index):
         if self.is_empty(): return
